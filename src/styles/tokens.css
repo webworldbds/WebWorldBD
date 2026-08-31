@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --color-primary: #1E50FF;        /* Electric Blue */
+    --color-primary-hover: #003BE5;
+    --color-secondary: #8B5CF6;      /* Purple */
+    --color-accent: #06B6D4;         /* Cyan */
+
+    /* Neutral Tokens - Light Mode Default */
+    --color-bg: #F8FAFC;             /* Very Light Gray/Slate */
+    --color-surface: #FFFFFF;        /* Pure White */
+    --color-surface-hover: #F1F5F9;
+    --color-border: #E2E8F0;
+    --color-text: #0F172A;           /* Deep Slate / Near-Black */
+    --color-text-muted: #64748B;
+    --color-text-subtle: #94A3B8;
+
+    /* Typography */
+    --font-sans: 'Inter', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Dark Theme Tokens */
+  .dark {
+    --color-bg: #0B0F19;             /* Deep Navy */
+    --color-surface: #131B2E;        /* Dark Navy Surface */
+    --color-surface-hover: #1E293B;
+    --color-border: #1E293B;
+    --color-text: #F8FAFC;
+    --color-text-muted: #94A3B8;
+    --color-text-subtle: #64748B;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+}
